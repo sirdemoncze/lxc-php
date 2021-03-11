@@ -1,0 +1,11 @@
+[Unit]
+Description=/etc/php
+
+[Mount]
+What=hosting:/home/php
+Where=/etc/php
+Type=nfs
+Options=defaults,timeo=30
+
+[Install]
+WantedBy=multi-user.target
