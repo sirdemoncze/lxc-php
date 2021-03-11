@@ -5,7 +5,7 @@ Description=/etc/apache2
 What=hosting:/home/apache2
 Where=/etc/apache2
 Type=nfs
-Options=defaults
+Options=defaults,timeo=30
 
 [Install]
 WantedBy=multi-user.target
