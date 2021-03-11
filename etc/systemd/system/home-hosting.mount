@@ -1,0 +1,11 @@
+[Unit]
+Description=/home/hosting
+
+[Mount]
+What=hosting:/home/hosting
+Where=/home/hosting
+Type=nfs
+Options=defaults
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=/etc/apache2
+
+[Mount]
+What=hosting:/home/apache2
+Where=/etc/apache2
+Type=nfs
+Options=defaults
+
+[Install]
+WantedBy=multi-user.target

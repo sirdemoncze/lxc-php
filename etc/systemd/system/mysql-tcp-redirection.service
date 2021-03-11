@@ -1,0 +1,17 @@
+[Unit]
+Description=MySQL TCP Redirection
+After=network.target
+
+[Service]
+Type=forking
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=mysql-tcp-redirection
+SuccessExitStatus=143
+
+ExecStart=/usr/bin/socat TCP-LISTEN:3306,fork TCP:sql:3306
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
