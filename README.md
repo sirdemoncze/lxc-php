@@ -17,36 +17,36 @@ wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && 
 4. Instalace Webového serveru, PHP a ostatních balíčků
 ```
 apt-get install -y \
-htop \
-mc \
-socat \
-mariadb-server \
-apache2 \
-php7.3 \
-php7.3-common \
-php7.3-json \
-php7.3-zip \
-php7.3-mysql \
-php7.3-gd \
-php7.3-imap \
-php7.3-ldap \
-php7.3-pgsql \
-php7.3-pspell \
-php7.3-tidy \
-php7.3-curl \
-php7.3-xmlrpc \
-php7.3-xsl \
-php7.3-bz2 \
-php7.3-mbstring \
-php7.3-bcmath \
-php7.3-dba \
-php7.3-soap \
-php7.3-imagick \
-php7.3-memcache \
-php7.3-mysql \
-php7.3-sybase \
-php7.3-sqlite3 \
-php7.3-ssh2
+  htop \
+  mc \
+  socat \
+  mariadb-server \
+  apache2 \
+  php7.3 \
+  php7.3-common \
+  php7.3-json \
+  php7.3-zip \
+  php7.3-mysql \
+  php7.3-gd \
+  php7.3-imap \
+  php7.3-ldap \
+  php7.3-pgsql \
+  php7.3-pspell \
+  php7.3-tidy \
+  php7.3-curl \
+  php7.3-xmlrpc \
+  php7.3-xsl \
+  php7.3-bz2 \
+  php7.3-mbstring \
+  php7.3-bcmath \
+  php7.3-dba \
+  php7.3-soap \
+  php7.3-imagick \
+  php7.3-memcache \
+  php7.3-mysql \
+  php7.3-sybase \
+  php7.3-sqlite3 \
+  php7.3-ssh2
 ```
 
 5. Zakázání spouštění MariaDB serveru
