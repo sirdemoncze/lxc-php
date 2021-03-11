@@ -27,6 +27,7 @@ apt-get install -y \
     htop \
     mc \
     socat \
+    nfs-common \
     mariadb-server \
     apache2 \
     php7.3 \
