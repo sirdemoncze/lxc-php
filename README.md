@@ -1,5 +1,11 @@
 # Instalace LXC PHP
-1. Prioritní balíčky
+1. Aktualizace stávající instalace
+```
+apt-get update
+apt-get upgrade
+```
+
+2. Prioritní balíčky
 ```
 apt-get -y install software-properties-common apt-transport-https lsb-release ca-certificates locales
 ```
