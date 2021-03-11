@@ -65,3 +65,9 @@ systemctl enable etc-apache2.mount etc-php.mount home-hosting.mount mysql-socket
 sed -i 's/^#\?\(PermitRootLogin \).*/\1yes/' /etc/ssh/sshd_config
 systemctl sshd reload
 ```
+
+8. Nastavení aktuální složky při ukončení Midnight Commander
+```
+echo "alias mc='source /usr/lib/mc/mc-wrapper.sh'" >> ~/.profile
+. ~/.profile
+```
