@@ -18,6 +18,7 @@ localedef -i cs_CZ -c -f UTF-8 -A /usr/share/locale/locale.alias cs_CZ.UTF-8
 3. Nastavení zdroje pro PHP (sury)
 ```
 wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
+apt-get update
 ```
 
 4. Instalace Webového serveru, PHP a ostatních balíčků
