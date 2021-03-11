@@ -56,9 +56,6 @@ update-rc.d mysql disable
 6. Nastavení služeb
 Zkopírovat složku /etc/ z repozitáře do containeru a následně povolit služby.
 ```
-systemctl enable etc-apache2.mount
-systemctl eanble home-hosting.mount
-systemctl enable mysql-socket-redirection
-systemctl enable mysql-tcp-redirection
+systemctl enable etc-apache2.mount etc-php.mount home-hosting.mount mysql-socket-redirection mysql-tcp-redirection
 ```
 
