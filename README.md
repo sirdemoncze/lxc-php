@@ -63,7 +63,7 @@ systemctl enable etc-apache2.mount etc-php.mount home-hosting.mount mysql-socket
 7. Povolení vzdáleného SSH přihlášení na root
 ```
 sed -i 's/^#\?\(PermitRootLogin \).*/\1yes/' /etc/ssh/sshd_config
-systemctl sshd reload
+systemctl reload sshd
 ```
 
 8. Nastavení aktuální složky při ukončení Midnight Commander
