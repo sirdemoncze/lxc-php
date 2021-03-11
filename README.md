@@ -17,9 +17,10 @@ wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && 
 4. Instalace Webového serveru, PHP a ostatních balíčků
 ```
 apt-get install -y \
+htop \
 mc \
-mariadb-server \
 socat \
+mariadb-server \
 apache2 \
 php7.3 \
 php7.3-common \
@@ -59,3 +60,8 @@ Zkopírovat složku /etc/ z repozitáře do containeru a následně povolit slu�
 systemctl enable etc-apache2.mount etc-php.mount home-hosting.mount mysql-socket-redirection mysql-tcp-redirection
 ```
 
+7. Povolení vzdáleného SSH přihlášení na root
+```
+sed -i 's/^#\?\(PermitRootLogin \).*/\1yes/' /etc/ssh/sshd_config
+systemctl sshd reload
+```
