@@ -3,16 +3,15 @@ Description=MySQL Socket Redirection
 After=network.target
 
 [Service]
-Type=forking
+Type=simple
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=mysql-socket-redirection
-SuccessExitStatus=143
 
 ExecStartPre=/bin/mkdir -p /var/run/mysqld
-ExecStart=/usr/bin/socat UNIX-LISTEN:/var/run/mysqld/mysqld.sock,fork,reuseaddr,unlink-early,user=mysql,group=mysql,mode=777 TCP:sql:3306
+ExecStart=/usr/bin/socat -d -d UNIX-LISTEN:/var/run/mysqld/mysqld.sock,fork,reuseaddr,unlink-early,user=mysql,group=mysql,mode=777 TCP:sql:3306
 
-Restart=always
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
