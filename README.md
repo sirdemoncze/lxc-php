@@ -12,7 +12,7 @@ apt-get -y install software-properties-common apt-transport-https lsb-release ca
 
 2. Časové zóny a kódování prostředí
 ```
-timedatectl set-timezone
+timedatectl set-timezone Europe/Prague
 localedef -i cs_CZ -c -f UTF-8 -A /usr/share/locale/locale.alias cs_CZ.UTF-8
 ```
 
