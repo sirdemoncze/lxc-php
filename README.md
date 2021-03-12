@@ -60,7 +60,7 @@ apt-get install -y \
 
 5. Zakázání spouštění MariaDB serveru
 ```
-update-rc.d mysql disable
+systemctl disable mariadb
 ```
 
 6. Nastavení služeb
