@@ -7,11 +7,12 @@ apt-get upgrade
 
 2. Prioritní balíčky
 ```
-apt-get -y install software-properties-common apt-transport-https lsb-release ca-certificates locales
+apt-get -y install software-properties-common apt-transport-https lsb-release ca-certificates locales chrony
 ```
 
-2. Kódování prostředí
+2. Časové zóny a kódování prostředí
 ```
+timedatectl set-timezone
 localedef -i cs_CZ -c -f UTF-8 -A /usr/share/locale/locale.alias cs_CZ.UTF-8
 ```
 
