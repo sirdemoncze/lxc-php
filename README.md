@@ -2,12 +2,12 @@
 1. Aktualizace stávající instalace
 ```
 apt-get update
-apt-get upgrade
+apt-get upgrade -y
 ```
 
 2. Prioritní balíčky
 ```
-apt-get -y install software-properties-common apt-transport-https lsb-release ca-certificates locales chrony
+apt-get install -y software-properties-common apt-transport-https lsb-release ca-certificates locales chrony
 ```
 
 2. Časové zóny a kódování prostředí
