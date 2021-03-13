@@ -98,11 +98,11 @@ echo "
 192.168.254.32	sql
 
 # Back compatibility
-127.0.0.1	sparrow.compsys.cz
-127.0.0.1	sqlserver.datnet.cz
-127.0.0.1	sql.datnet.cz
-127.0.0.1	sqlserver.vendys.net
-127.0.0.1	sql.vendys.net" >> /etc/hosts
+127.0.0.1 sparrow.compsys.cz
+127.0.0.1 sqlserver.datnet.cz
+127.0.0.1 sql.datnet.cz
+127.0.0.1 sqlserver.vendys.net
+127.0.0.1 sql.vendys.net" >> /etc/hosts
 ```
 
 
