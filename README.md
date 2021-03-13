@@ -94,10 +94,10 @@ client charset = UTF-8" >> /etc/freetds/freetds.conf
 10. Lokální DNS
 ```
 echo "
-\# SQL
+# SQL
 192.168.254.32	sql
 
-\# Back compatibility
+# Back compatibility
 127.0.0.1	sparrow.compsys.cz
 127.0.0.1	sqlserver.datnet.cz
 127.0.0.1	sql.datnet.cz
