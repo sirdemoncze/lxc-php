@@ -9,7 +9,7 @@ StandardError=syslog
 SyslogIdentifier=mysql-socket-redirection
 
 ExecStartPre=/bin/mkdir -p /var/run/mysqld
-ExecStart=/usr/bin/socat -d -d UNIX-LISTEN:/var/run/mysqld/mysqld.sock,fork,reuseaddr,unlink-early,user=mysql,group=mysql,mode=777 TCP:sql:3306
+ExecStart=/usr/bin/socat -d -d UNIX-LISTEN:/var/run/mysqld/mysqld.sock,fork,reuseaddr,unlink-early,user=mysql,group=mysql,mode=777 TCP4:sql:3306
 
 Restart=on-failure
 
