@@ -80,3 +80,26 @@ systemctl reload sshd
 echo "alias mc='source /usr/lib/mc/mc-wrapper.sh'" >> ~/.profile
 . ~/.profile
 ```
+
+## Přesměrování fce mail() (postix relay)
+1. Instalace prioritních balíčků
+```
+apt-get install libsasl2-modules
+```
+
+2. Úprava souboru main.cf
+```
+relayhost = [mail]:587
+smtp_tls_loglevel=1
+smtp_tls_security_level=encrypt
+smtp_sasl_auth_enable=yes
+smtp_sasl_security_options = noanonymous
+smtp_sasl_password_maps = hash:/etc/postfix/relay_passwd
+```
+
+3. Vytvoření souboru pro ověření
+```
+echo "[mail]:587 <uzivatelske_jmeno>:<heslo>" > /etc/postfix/relay_passwd
+postmap /etc/postfix/relay_passwd
+```
+
