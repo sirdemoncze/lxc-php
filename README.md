@@ -85,10 +85,10 @@ echo "alias mc='source /usr/lib/mc/mc-wrapper.sh'" >> ~/.profile
 ```
 echo "
 [lk]
-	host = 80.188.134.210
-	port = 1433
-	tds version = 8.0
-	client charset = UTF-8" >> /etc/freetds/freetds.conf
+host = 80.188.134.210
+port = 1433
+tds version = 8.0
+client charset = UTF-8" >> /etc/freetds/freetds.conf
 ```
 
 ## Přesměrování fce mail() (postix relay)
