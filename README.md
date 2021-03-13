@@ -81,6 +81,16 @@ echo "alias mc='source /usr/lib/mc/mc-wrapper.sh'" >> ~/.profile
 . ~/.profile
 ```
 
+9. Nastavení individuálních nastavení pro MSSQL
+```
+echo "
+[lk]
+	host = 80.188.134.210
+	port = 1433
+	tds version = 8.0
+	client charset = UTF-8" >> /etc/freetds/freetds.conf
+```
+
 ## Přesměrování fce mail() (postix relay)
 1. Instalace prioritních balíčků
 ```
