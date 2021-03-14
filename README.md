@@ -95,7 +95,10 @@ client charset = UTF-8" >> /etc/freetds/freetds.conf
 ```
 echo "
 # SQL
-192.168.254.32	sql
+192.168.254.32 sql
+
+# MAIL
+192.168.254.32 mail.compsys.cz
 
 # Back compatibility
 127.0.0.1 sparrow.compsys.cz
