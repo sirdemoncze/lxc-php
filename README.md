@@ -118,6 +118,7 @@ apt-get install libsasl2-modules
 2. Úprava souboru main.cf
 ```
 relayhost = [mail]:587
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
 smtp_tls_loglevel=1
 smtp_tls_security_level=encrypt
 smtp_sasl_auth_enable=yes
