@@ -108,6 +108,11 @@ echo "
 127.0.0.1 sql.vendys.net" >> /etc/hosts
 ```
 
+11. Composer
+```
+wget -O composer-setup.php https://getcomposer.org/installer && php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
+
 
 ## Přesměrování fce mail() (postix relay)
 1. Instalace prioritních balíčků
