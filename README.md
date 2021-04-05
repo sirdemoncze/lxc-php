@@ -113,6 +113,10 @@ echo "
 wget -O composer-setup.php https://getcomposer.org/installer && php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
+12. Imagick (odblokování formáty, kvůli chybě v Ghostscript <= 9.23) 
+```
+sed -i '/disable ghostscript format types/,+6d' /etc/ImageMagick-6/policy.xml
+```
 
 ## Přesměrování fce mail() (postix relay)
 1. Instalace prioritních balíčků
